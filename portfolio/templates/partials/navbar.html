@@ -1,5 +1,6 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-">
     <div class="container">
       <a class="navbar-brand fw-bold" href="/">JhosianDev</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,4 +21,18 @@
         </ul>
       </div>
     </div>
+  </nav> -->
+
+<header class="header">
+  <nav class="header_nav">
+    <div class="header_logo">
+      <a href="/">JhosianDev</a>
+    </div>
+
+    <div class="header_links">
+      <a href="{% url 'blog:posts' %}">Blog</a>
+      <a href="">Contact</a>
+    </div>
+
   </nav>
+</header>

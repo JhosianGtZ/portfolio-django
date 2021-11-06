@@ -1,4 +1,131 @@
-body{
-    background-color: #090909;
+/* Poppins Font and Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --background: #111;
+    --text: #f2f2f2;
+    --primary: #FCA311;
+    --dark-light: #101010;
+    --transparent: rgba(16, 16, 16, 0.7);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-light);
+    color: var(--text);
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+/* Header styles */
+.header {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 90px;
+    background-color: var(--transparent);
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header_nav a {
+    text-decoration: none;
     color: #f2f2f2;
+
+}
+
+.header_logo {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 4rem;
+}
+
+.header_logo a:hover {
+    color: var(--primary);
+}
+
+.header_links {
+    margin-right: 4rem;
+}
+
+.header_links a {
+    margin-left: 1rem;
+}
+
+.header_links a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+
+/* Portfolio Introduction */
+
+.introduction {
+    font-family: 'Montserrat' , sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    height: 100vh;
+
+}
+
+.introduction_text h1{
+    display: inline-block;
+    width: 780px;
+    font-size: 50px;
+    margin-bottom: -.1rem;
+}
+.introduction_text b{
+    color: var(--primary);
+}
+
+.introduction_text p{
+    width: 700px;
+    display: inline-block;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.introduction_text a{
+    line-height: 40px;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 600;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--primary);
+    text-decoration: none;
+    box-shadow: 5px 5px 15px #000;
+    transition: all .5s ease-in-out;
+}
+
+.introduction_text a:hover{
+    transform: translateY(-10px);
+}
+
+
+.introduction_image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
 }
