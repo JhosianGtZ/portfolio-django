@@ -21,6 +21,38 @@
     </div>
 </section>
 
+<section class="projects" id="projects">
+    <div class="container">
+        <h2>My recent Projects</h2>
+        <div class="card-group">
+            {% for project in projects %}
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="{{project.image.url}}" alt="{{project.title}}">
+                </div>
+
+                <div class="card-text">
+
+                    <div class="card-title">
+                        <h2>{{project.title}}</h2>
+                    </div>
+
+                    <div class="card-description">
+                        <p>{{project.description}}</p>
+                    </div>
+
+                    <div class="card-button">
+                        <a href="{{project.url}}">View project</a>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 
 
 <!-- <img src="{% static 'portfolio/profile.jpeg' %}" alt=""> -->
