@@ -1,7 +1,7 @@
 
-# Project Name
+# Portfolio Using Django
 
-This is a solution to the ...
+This is my portfolio, I made it with Django 
 
 ## Table of contents
 
