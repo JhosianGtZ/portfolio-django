@@ -29,9 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Portfolio](screenshots/desktop-portfolio.png)
+![Desktop Portfolio](./screenshots/desktop-portfolio.png)
 
-[Desktop Blog](screenshots/desktop-blog.png)
+![Desktop Blog](./screenshots/desktop-blog.png)
 
 
 
