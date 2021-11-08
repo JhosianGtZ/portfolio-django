@@ -26,6 +26,10 @@ h2 {
     text-align: center;
 }
 
+b {
+    color: var(--primary);
+}
+
 .container {
     width: 90%;
     max-width: 1440px;
@@ -324,14 +328,14 @@ h2 {
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
 
     .introduction {
         height: 100%;
     }
 
     .introduction_text {
-        width: 60%;
+        width: 45%;
     }
 
     .introduction_text h1 {
@@ -339,19 +343,19 @@ h2 {
     }
 
     .introduction_image {
-        width: 40%;
+        width: 45%;
     }
 
 
     .introduction_image img {
         margin-top: 3rem;
         width: 100%;
-        height: 50%;
+        height: 70%;
         object-fit: cover;
 
     }
 
-    
+
 }
 
 
@@ -372,34 +376,220 @@ h2 {
     }
 
     .introduction_image img {
-        
-        border-radius: 0;
+
+        border-radius: 6px;
     }
 
     .introduction_text {
-        
+
         width: 100%;
         margin: 2rem auto;
         text-align: center;
+
+    }
+
+    .introduction_text p {
+        text-align: center;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer h2 {
+        font-size: 30px;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
+}
+
+
+/* ------ ------ ------ ------  Blog ------ ------ ------ ------  */
+
+
+/* Landing  */
+.hero{
+    margin-top: 2rem;
+}
+
+.hero-group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    
+}
+
+.hero-text{
+    
+    width: 50%;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 40px;
+}
+
+.hero-text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+
+.hero-image{
+    
+    width: 50%;
+    margin:  0 auto;
+    
+}
+
+/* Posts  */
+
+.posts{
+    background: var(--dark-light);
+    padding: 2rem;
+}
+
+.posts h2{
+    font-size: 35px;
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.post{
+    
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px var(--background);
+    transition: all .5s ease-in-out;
+}
+.post:hover{
+    transform: translateX(10px);
+}
+
+
+.post-info{
+    width: 50%;
+    padding: 2rem;
+}
+
+.post-info h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.post-info p{
+    margin-bottom: 1rem;
+    letter-spacing: .05em;
+    line-height: 23px;
+}
+
+.post-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.post-cta p{
+    margin-top: 1rem;
+    letter-spacing: .09em;
+    color: var(--text);
+}
+
+.post-cta a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    background: var(--primary);
+    height: 30px;
+    line-height: 30px;
+    width: 160px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+}
+
+.post-cta a:hover{
+    color: var(--primary);
+    background: var(--dark-light);
+}
+
+.post-image{
+    width: 50%;
+}
+
+.post-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .post-cta p{
+        font-size: 14px;
+    }
+    .post-cta a{
+        width: 120px;
+
+    }
+    .post-text p{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .post{
+        flex-direction: column-reverse;
+        height: 400px;
+    }
+    .posts{
+        padding: 0;
         
     }
 
-    .introduction_text p{
-        text-align: center;
-    }
-    .projects h2{
-        font-size: 30px;
-    }
-
-    .card{
+    .post-info{
         width: 100%;
     }
 
-    .footer h2{
-        font-size: 30px;
+    .post-text h3{
+        font-size: 20px;
     }
 
-    .footer-social{
+    .post-cta{
+        flex-wrap: wrap;
+    }
+
+    .post-cta a{
+        font-size: 13px;
+        width: 120px;
+        
+    }
+    .post-image{
         width: 100%;
+    }
+
+    .post-image img{
+        height: 200px;
+        object-fit: cover;
     }
 }
