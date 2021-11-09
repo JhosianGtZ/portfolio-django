@@ -6,7 +6,7 @@
     --text: #f2f2f2;
     --primary: #FCA311;
     --dark-light: #222;
-    --transparent: rgba(16, 16, 16, 0.7);
+    --transparent: rgba(16, 16, 16, 0.99);
     --dark: #333;
 }
 
@@ -94,6 +94,7 @@ b {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 4rem;
     height: 100vh;
     /* padding-left: 60px; */
@@ -102,13 +103,16 @@ b {
 .introduction_text {
     width: 60%;
     margin-right: 4rem;
+
 }
 
 .introduction_text h1 {
+
     display: inline-block;
     width: 100%;
     font-size: 50px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+
 }
 
 .introduction_text b {
@@ -120,6 +124,7 @@ b {
     display: inline-block;
     line-height: 30px;
     margin-bottom: 2rem;
+
 }
 
 .introduction_text a {
@@ -328,55 +333,24 @@ b {
     }
 }
 
-@media screen and (max-width:900px) {
-
-    .introduction {
-        height: 100%;
-    }
-
-    .introduction_text {
-        width: 45%;
-    }
-
-    .introduction_text h1 {
-        font-size: 35px;
-    }
-
-    .introduction_image {
-        width: 45%;
-    }
 
 
-    .introduction_image img {
-        margin-top: 3rem;
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-
-    }
-
-
-}
-
-
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 
     .introduction {
         flex-wrap: wrap-reverse;
         align-items: center;
-        /* justify-content: center; */
+        justify-content: center;
+        height: 100%;
     }
 
     .introduction_image {
-        margin: 0 auto;
         width: 100%;
-        /* margin: -1rem 0 2rem 0; */
     }
 
     .introduction_image img {
-
+        width: 100%;
+        margin: 0 auto;
         border-radius: 6px;
     }
 
@@ -409,63 +383,69 @@ b {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .card h2 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+}
 
 /* ------ ------ ------ ------  Blog ------ ------ ------ ------  */
 
 
 /* Landing  */
-.hero{
+.hero {
     margin-top: 2rem;
 }
 
-.hero-group{
+.hero-group {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 600px;
-    
+
 }
 
-.hero-text{
-    
+.hero-text {
+
     width: 50%;
     text-align: center;
 }
 
-.hero-text h1{
-    font-family: 'Poppins' ,sans-serif;
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
 }
 
-.hero-text h3{
+.hero-text h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     letter-spacing: .05em;
 }
 
-.hero-image{
-    
+.hero-image {
+
     width: 50%;
-    margin:  0 auto;
-    
+    margin: 0 auto;
+
 }
 
 /* Posts  */
 
-.posts{
+.posts {
     background: var(--dark-light);
     padding: 2rem;
 }
 
-.posts h2{
+.posts h2 {
     font-size: 35px;
     margin-bottom: 2rem;
     color: var(--primary);
 }
 
-.post{
-    
+.post {
+
     display: flex;
     justify-content: space-between;
     background: #000;
@@ -476,43 +456,44 @@ b {
     box-shadow: 2px 2px 5px var(--background);
     transition: all .5s ease-in-out;
 }
-.post:hover{
+
+.post:hover {
     transform: translateX(10px);
 }
 
 
-.post-info{
+.post-info {
     width: 50%;
     padding: 2rem;
 }
 
-.post-info h3{
+.post-info h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     color: var(--primary);
     margin-bottom: 1rem;
 }
 
-.post-info p{
+.post-info p {
     margin-bottom: 1rem;
     letter-spacing: .05em;
     line-height: 23px;
 }
 
-.post-cta{
+.post-cta {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
 }
 
-.post-cta p{
+.post-cta p {
     margin-top: 1rem;
     letter-spacing: .09em;
     color: var(--text);
 }
 
-.post-cta a{
+.post-cta a {
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -526,16 +507,16 @@ b {
     transition: all .5s ease-in-out;
 }
 
-.post-cta a:hover{
+.post-cta a:hover {
     color: var(--primary);
     background: var(--dark-light);
 }
 
-.post-image{
+.post-image {
     width: 50%;
 }
 
-.post-image img{
+.post-image img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -544,52 +525,132 @@ b {
 
 @media screen and (max-width: 850px) {
 
-    .post-cta p{
+    .post-cta p {
         font-size: 14px;
     }
-    .post-cta a{
+
+    .post-cta a {
         width: 120px;
 
     }
-    .post-text p{
+
+    .post-text p {
         font-size: 14px;
     }
-    
+
 }
 
 @media screen and (max-width: 750px) {
-    .post{
+    .post {
         flex-direction: column-reverse;
         height: 400px;
     }
-    .posts{
+
+    .posts {
         padding: 0;
-        
+
     }
 
-    .post-info{
+    .post-info {
         width: 100%;
     }
 
-    .post-text h3{
+    .post-text h3 {
         font-size: 20px;
     }
 
-    .post-cta{
+    .post-cta {
         flex-wrap: wrap;
     }
 
-    .post-cta a{
+    .post-cta a {
         font-size: 13px;
         width: 120px;
-        
+
     }
-    .post-image{
+
+    .post-image {
         width: 100%;
     }
 
-    .post-image img{
+    .post-image img {
         height: 200px;
         object-fit: cover;
+    }
+}
+
+/* Article */
+
+.articles {
+    padding: 40px 30px;
+    background: var(--dark-light);
+}
+
+.article-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.article-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.article-title h1 {
+    display: inline-block;
+    font-size: 40px;
+    color: #FCA311;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.article-title p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.article-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.article-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--background);
+    background: var(--primary);
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width:500px) {
+    .article {
+        text-align: center;
+    }
+    .article-title h1{
+        font-size: 2rem;
+    }
+    .article-text{
+        text-align: center;
+    }
+    .article-btn{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .article-title h1{
+        font-size: 1.5rem;
     }
 }

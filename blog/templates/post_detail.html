@@ -1,10 +1,39 @@
 {% extends 'layout.html' %}
 
+{% load static %}
+
 {% block content %}
 
-    <h2>{{post.title}}</h2>
+<section class="articles">
+    <div class="container">
+
+        <div class="article">
+            <div class="article-image">
+                <img src="{{post.image.url}}" alt="{{post.title}}">
+            </div>
+
+            <div class="article-title">
+                <h1>{{post.title}} </h1>
+                <p>{{post.date|date:"d-F-Y"}}</p>
+            </div>
+            <div class="article-text">
+                <p>{{post.description |safe }}</p>
+            </div>
+
+            <div class="article-button">
+                <a class="article-btn" href="/blog#articles">More articles</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
+
+
+
+<!-- <h2>{{post.title}}</h2>
     <p>{{post.date|date:"d-F-Y"}}</p>
     <img src="{{post.image.url}}" alt="{{post.title}}">
-    <p>{{post.description |safe }}</p>
-    
-{% endblock %}
+    <p>{{post.description |safe }}</p> -->
