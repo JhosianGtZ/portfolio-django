@@ -63,14 +63,15 @@ b {
 
 }
 
-.header_logo {
+.header_logo a{
     font-size: 20px;
     font-weight: 600;
     margin-left: 4rem;
+    color: var(--primary);
 }
 
 .header_logo a:hover {
-    color: var(--primary);
+    color: var(--text);
     z-index: 0;
 }
 
@@ -89,6 +90,13 @@ b {
 
 
 /* Portfolio Introduction */
+
+.introduction-section{
+    background-image: url('portfolio/images/background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .introduction {
     font-family: 'Montserrat', sans-serif;
@@ -395,40 +403,56 @@ b {
 
 /* Landing  */
 .hero {
-    margin-top: 2rem;
-}
-
-.hero-group {
-
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 600px;
-
+    height: 100vh;
+    background-image: url('portfolio/images/backgroun-blog.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 .hero-text {
-
-    width: 50%;
+    width: 100%;
     text-align: center;
+    margin-bottom: 8rem;
 }
 
 .hero-text h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 1rem;
 }
 
 .hero-text h3 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     font-weight: 300;
     letter-spacing: .05em;
+    color: #ccc;
 }
 
-.hero-image {
+.hero-text a{
+    line-height: 40px;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 600;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--primary);
+    text-decoration: none;
+    box-shadow: 5px 5px 15px #000;
+    transition: all .5s ease-in-out;
+    margin-top: 1.5rem;
+    animation: button;
+}
 
-    width: 50%;
-    margin: 0 auto;
 
+.hero-text a:hover{
+    transform: translateY(5px);
 }
 
 /* Posts  */
@@ -653,4 +677,63 @@ b {
     .article-title h1{
         font-size: 1.5rem;
     }
+}
+
+
+
+/* Mailto custom css */
+
+
+.mailtoui-modal {
+    background-color: rgba(250, 250, 250, 0.5);
+    color: #fff;
+}
+
+.mailtoui-modal-head {
+    background-color: var(--background);
+}
+
+.mailtoui-modal-title {
+    color: var(--primary);
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
+    color: var(--primary);
+}
+
+.mailtoui-modal-body {
+    background-color: var(--background);
+}
+
+.mailtoui-button:focus .mailtoui-button-content {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.mailtoui-button-content,
+.mailtoui-button-copy {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.mailtoui-button-content:hover,
+.mailtoui-button-content:focus,
+.mailtoui-button-copy:hover,
+.mailtoui-button-copy:focus {
+    background-color: var(--primary);
+    color: var(--text-color);
+    ;
+}
+
+.mailtoui-button-copy-clicked,
+.mailtoui-button-copy-clicked:hover,
+.mailtoui-button-copy-clicked:focus {
+    background-color: #1F9D55;
+    color: var(--text-color);
+}
+
+.mailtoui-email-address {
+    background-color: var(--background);
+    color: var(--primary);
 }
