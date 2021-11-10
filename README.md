@@ -29,10 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
+- Portfolio Desktop view
 ![Desktop Portfolio](./screenshots/desktop-portfolio.png)
 
+- Blog Desktop view
 ![Desktop Blog](./screenshots/desktop-blog.png)
 
+- Article Desktop view
+![Desktop Article](./screenshots/desktop-article.png)
 
 
 
