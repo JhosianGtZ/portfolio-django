@@ -20,6 +20,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--background);
     color: var(--text);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h2 {
@@ -55,6 +60,12 @@ b {
     justify-content: space-between;
     align-items: center;
     height: 60px;
+
+}
+
+.icon {
+    display: none;
+    font-size: 30px;
 }
 
 .header_nav a {
@@ -63,7 +74,7 @@ b {
 
 }
 
-.header_logo a{
+.header_logo a {
     font-size: 20px;
     font-weight: 600;
     margin-left: 4rem;
@@ -76,27 +87,36 @@ b {
 }
 
 .header_links {
-    margin-right: 4rem;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2rem;
 }
 
 .header_links a {
+    padding: 4px;
     margin-left: 1rem;
+    /* border-top: 1px solid transparent; */
+    border-bottom: 1px solid transparent;
+    transition: .5s ease-out;
 }
 
 .header_links a:hover {
     color: var(--primary);
-    text-decoration: underline;
+    /* border-top: .5px solid var(--primary); */
+    border-bottom: 1px solid var(--primary);
 }
 
 
 /* Portfolio Introduction */
 
-.introduction-section{
-    background-image: url('portfolio/images/background.jpg');
-    background-position: center;
+.introduction-section {
+    background-image: linear-gradient(to bottom left, #434343 10%, #000 60%);
     background-attachment: fixed;
     background-size: cover;
 }
+
 
 .introduction {
     font-family: 'Montserrat', sans-serif;
@@ -345,6 +365,72 @@ b {
 
 @media screen and (max-width: 900px) {
 
+    .icon {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        font-size: 35px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: 10px;
+        z-index: 100;
+
+    }
+
+
+    .header_logo a {
+        margin-left: 1.5rem;
+        cursor: pointer;
+    }
+
+    .header_links {
+
+        flex-direction: column;
+        z-index: 210;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+        position: fixed;
+        margin-right: 0;
+        margin-top: 60px;
+
+        height: 100vh;
+        width: 100%;
+
+        top: 0;
+        right: 0;
+
+        background-color: #000000;
+        transition: all 1s ease;
+
+    }
+
+    .header_links a {
+        font-weight: bolder;
+        font-size: 30px;
+        margin: -5rem;
+        border-bottom: 1px solid transparent;
+    }
+
+    .header_links a:hover {
+
+        border-bottom: 1px solid var(--primary);
+    }
+
+    .btn-1{
+        
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+    }
+
+    .btn-2{
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+    }
+
     .introduction {
         flex-wrap: wrap-reverse;
         align-items: center;
@@ -406,7 +492,7 @@ b {
     display: flex;
     align-items: center;
     height: 100vh;
-    background-image: url('portfolio/images/backgroun-blog.jpg');
+    background-image: linear-gradient(to top right, #FCA311 0%, #111 60%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -433,7 +519,7 @@ b {
     color: #ccc;
 }
 
-.hero-text a{
+.hero-text a {
     line-height: 40px;
     border-radius: 4px;
     color: #000;
@@ -446,12 +532,12 @@ b {
     text-decoration: none;
     box-shadow: 5px 5px 15px #000;
     transition: all .5s ease-in-out;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     animation: button;
 }
 
 
-.hero-text a:hover{
+.hero-text a:hover {
     transform: translateY(5px);
 }
 
@@ -661,20 +747,23 @@ b {
     .article {
         text-align: center;
     }
-    .article-title h1{
+
+    .article-title h1 {
         font-size: 2rem;
     }
-    .article-text{
+
+    .article-text {
         text-align: center;
     }
-    .article-btn{
+
+    .article-btn {
         width: 100%;
     }
 }
 
 
 @media screen and (max-width:450px) {
-    .article-title h1{
+    .article-title h1 {
         font-size: 1.5rem;
     }
 }
