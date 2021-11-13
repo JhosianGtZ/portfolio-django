@@ -33,7 +33,7 @@ Users should be able to:
 ![Desktop Portfolio](./screenshots/desktop-portfolio-1.png)
 
 - Blog Desktop 
-![Desktop Blog](./screenshots/desktop-blog.png)
+![Desktop Blog](./screenshots/desktop-blog-1.png)
 
 - Article Desktop 
 ![Desktop Article](./screenshots/desktop-article.png)
