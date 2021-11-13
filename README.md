@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 - Portfolio Desktop 
-![Desktop Portfolio](./screenshots/desktop-portfolio.png)
+![Desktop Portfolio](./screenshots/desktop-portfolio-1.png)
 
 - Blog Desktop 
 ![Desktop Blog](./screenshots/desktop-blog.png)
@@ -38,17 +38,23 @@ Users should be able to:
 - Article Desktop 
 ![Desktop Article](./screenshots/desktop-article.png)
 
+#### Responsive design
 
 - Portfolio Mobile
+
 ![Mobile Portfolio](./screenshots/mobile-portfolio.png)
 
+
 - Blog Mobile
+
 ![Mobile Blog](./screenshots/mobile-blog.png)
 
 - Article Mobile
+
 ![Mobile Article](./screenshots/mobile-article.png)
 
 - Menu Responsive
+
 ![Mobile Menun](./screenshots/mobile-menu.png)
 
 
