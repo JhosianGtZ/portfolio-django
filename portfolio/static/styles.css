@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,8 +51,12 @@ b {
     padding: 0;
     top: 0;
     width: 100vw;
-    background-color: var(--transparent);
+    background: none;
     z-index: 10;
+    transition: 0.5s ease;
+}
+.solid-header{
+    background: var(--transparent);
 }
 
 .header_nav {
@@ -60,6 +65,7 @@ b {
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    transition: 0.6s;
 
 }
 
@@ -123,7 +129,7 @@ b {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     height: 100vh;
     /* padding-left: 60px; */
 }
