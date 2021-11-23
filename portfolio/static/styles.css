@@ -73,6 +73,13 @@ b {
     display: none;
     font-size: 30px;
 }
+.bx-x{
+    color: var(--primary);
+}
+
+.icon i{
+    font-size: 40px;
+}
 
 .header_nav a {
     text-decoration: none;
